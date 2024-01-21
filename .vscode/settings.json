@@ -1,0 +1,8 @@
+{
+    "editor.linkedEditing": true,
+    "editor.cursorBlinking": "expand",
+    "files.autoSave": "afterDelay",
+    "editor.fontSize": 16,
+    "editor.fontFamily": "Consolas,FagoEx,Century Gothic, 'Courier New',monospace",
+    "editor.tabSize": 2
+}
