@@ -1,5 +1,17 @@
 <div class="d-flex bg-dark" id="wrapper" style="height: 62px !important;"></div>
-
+<style>
+    .jumbotron{
+        background-image: url("<?= baseUrl?><?=$img_banner?>");
+    }
+</style>
+<div class="jumbotron">
+    <div  class="container">
+        <img src="" alt="" srcset="">
+        <h1 class="display-3">Hello, world!</h1>
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <p><a class="btn btn-primary btn-lg mb-5" href="#" role="button">Learn more »</a></p>
+    </div>
+</div>
 <div class="container py-5">
     <h6><small class="text-muted">HOME</small> | TIENDA</h6>
 </div>
@@ -20,12 +32,13 @@
                     <select class="form-select" aria-label="Default select example">
                         <option selected>Ordenar por...</option>
                         <option value="1">Ordenar de menor a mayor</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                        <option value="2">Ordenar de mayor a menor</option>
+                        <option value="3">Ordenr de A a la Z</option>
+                        <option value="3">Ordenr de Z a la A</option>
                     </select>
                 </div>
             </div>
-            <div class="row">
+            <div id="contentProducts" class="row">
                 <?php foreach ($productos as $products) : ?>
                     <div class="col-md-3 col-sm-12">
                         <cennter>
@@ -34,8 +47,6 @@
                         </cennter>
                     </div>
                 <?php endforeach; ?>
-
-
             </div>
         </div>
     </div>

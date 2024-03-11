@@ -78,6 +78,12 @@ class categoriaProducto{
 
     return $allCategorrias;
   }
+
+  public function getBannerCategoria($idcategoria){
+    $sql = "SELECT img_banner AS banner FROM categorias WHERE id = {$idcategoria}";
+    $banner =  $this->db->query($sql)->fetch_object()->banner;
+    return $banner;
+  }
 }
 
 ?>
