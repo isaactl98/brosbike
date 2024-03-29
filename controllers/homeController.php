@@ -9,13 +9,12 @@ class homeController
     {
         require_once 'views/home/home.php';
     }
+    // MODULO DE CATEGORIA DE PRODUCTOS
     public function shopBrosBike()
     {
-
         $allProductos =  new Productos();
         $productos =  $allProductos->getAllProductosActivos();
         $banner =  new categoriaProducto();
-
 
         $totalproductos =  $productos->num_rows;
 
