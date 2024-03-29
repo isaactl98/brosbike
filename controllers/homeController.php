@@ -19,6 +19,7 @@ class homeController
 
         $totalproductos =  $productos->num_rows;
 
+        //VALIDACION DE LA CATEGORIA SOLICITADA
         if (isset($_GET['idcategoriaProducto'])) {
             $idcategoriaProducto = $_GET['idcategoriaProducto'];
 
