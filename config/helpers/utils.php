@@ -31,5 +31,11 @@ class Utils
         return $namesession;
     }
     public static function sidebarCategorias()
-    { }
+    { 
+        require_once 'db/db.php';
+        $db = dataBase::conexion();
+        $allCategorias = "SELECT * FROM categorias;";
+        $categirias =  $db->query($allCategorias);
+        return $categirias;
+    }
 }

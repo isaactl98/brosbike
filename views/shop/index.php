@@ -1,11 +1,11 @@
 <div class="d-flex bg-dark" id="wrapper" style="height: 62px !important;"></div>
 <style>
-    .jumbotron{
-        background-image: url("<?= baseUrl?><?=$img_banner?>");
+    .jumbotron {
+        background-image: url("<?= baseUrl ?><?= $img_banner ?>");
     }
 </style>
 <div class="jumbotron">
-    <div  class="container">
+    <div class="container">
         <img src="" alt="" srcset="">
         <h1 class="display-3">Hello, world!</h1>
         <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
@@ -41,10 +41,12 @@
             <div id="contentProducts" class="row">
                 <?php foreach ($productos as $products) : ?>
                     <div class="col-md-3 col-sm-12">
-                        <cennter>
-                            <img src="<?= baseUrl ?>assets/img/productos/AIBPXzzSD6zzzz_1_1.png" width="250" height="auto" alt="">
-                            <h5><?= $products['prod_nombre']; ?></h5><small>$<?= $products['prod_precio']; ?></small>
-                        </cennter>
+                        <a href="<?= baseUrl ?>home/detalleProducto?prod=<?= $products['id'] ?>" class="text-decoration-none text-black">
+                            <cennter>
+                                <img src="<?= baseUrl ?>assets/img/productos/AIBPXzzSD6zzzz_1_1.png" width="250" height="auto" alt="">
+                                <h5><?= $products['prod_nombre']; ?></h5><small>$<?= $products['prod_precio']; ?></small>
+                            </cennter>
+                        </a>
                     </div>
                 <?php endforeach; ?>
             </div>

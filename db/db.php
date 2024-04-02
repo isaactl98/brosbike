@@ -7,5 +7,7 @@ class dataBase
         $db = new mysqli('localhost', 'root', '', 'brosbikeshop');
         $db->query("SET NAMES 'utf8'");
         return $db;
+
+        $db->close();
     }
 }

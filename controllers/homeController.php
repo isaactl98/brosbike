@@ -21,13 +21,21 @@ class homeController
         //VALIDACION DE LA CATEGORIA SOLICITADA
         if (isset($_GET['idcategoriaProducto'])) {
             $idcategoriaProducto = $_GET['idcategoriaProducto'];
-
             require_once 'views/shop/index.php';
         } else {
             $idcategoriaProducto = 1;
             $img_banner =  $banner->getBannerCategoria($idcategoriaProducto);
             require_once 'views/shop/index.php';
         }
+    }
+
+    public function detalleProducto(){
+        if(isset($_GET['prod'])){
+            $idprod =  $_GET['prod'];
+            echo $idprod;
+
+        }
+
     }
     public function servicios()
     {
