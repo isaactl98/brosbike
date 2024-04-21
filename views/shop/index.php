@@ -13,7 +13,7 @@
     </div>
 </div>
 <div class="container py-5">
-    <h6><small class="text-muted">HOME</small> | TIENDA</h6>
+    <h6><small class="text-muted">HOME</small> | TIENDA </h6>
 </div>
 
 <div class="container py-5">
@@ -39,16 +39,23 @@
                 </div>
             </div>
             <div id="contentProducts" class="row">
-                <?php foreach ($productos as $products) : ?>
-                    <div class="col-md-3 col-sm-12">
-                        <a href="<?= baseUrl ?>home/detalleProducto?prod=<?= $products['id'] ?>" class="text-decoration-none text-black">
-                            <cennter>
-                                <img src="<?= baseUrl ?>assets/img/productos/AIBPXzzSD6zzzz_1_1.png" width="250" height="auto" alt="">
-                                <h5><?= $products['prod_nombre']; ?></h5><small>$<?= $products['prod_precio']; ?></small>
-                            </cennter>
-                        </a>
+                <?php if ($totalproductos == 0) : ?>
+                    <div class="col-12 col-lg-12 col-sm-12 mt-5">
+                        <center><h1>PROXIMAMENTE!</h1></center>
                     </div>
-                <?php endforeach; ?>
+                <?php else : ?>
+                    <?php foreach ($productos as $products) : ?>
+                        <div class="col-md-3 col-sm-12">
+                            <a href="<?= baseUrl ?>home/detalleProducto?prod=<?= $products['id'] ?>" class="text-decoration-none text-black">
+                                <cennter>
+                                    <img src="<?= baseUrl ?>assets/img/productos/AIBPXzzSD6zzzz_1_1.png" width="250" height="auto" alt="">
+                                    <h5><?= $products['prod_nombre']; ?></h5><small>$<?= $products['prod_precio']; ?></small>
+                                </cennter>
+                            </a>
+                        </div>
+                    <?php endforeach; ?>
+                <?php endif; ?>
+
             </div>
         </div>
     </div>
