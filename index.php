@@ -28,12 +28,15 @@ require_once 'views/layout/head.php';
         }
     }
     ?>
+    </div>
     <?php
     require_once 'views/layout/footer.php';
     /* ELIMINACION DE LA SESSSION */
     Utils::deleteSession('errorLogin');
     ?>
-    </div>
+    
+    <!-- SCRIPTS PERSONLALIZADOS -->
+    <script src="js/navbarstyle.js"></script>
     <!-- ./wrapper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>

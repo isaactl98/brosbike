@@ -1,5 +1,4 @@
 <?php
-
 class Utils
 {
     public static function urlActual()
@@ -39,3 +38,4 @@ class Utils
         return $categirias;
     }
 }
+?>

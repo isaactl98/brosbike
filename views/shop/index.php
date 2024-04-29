@@ -42,6 +42,7 @@
                 <?php if ($totalproductos == 0) : ?>
                     <div class="col-12 col-lg-12 col-sm-12 mt-5">
                         <center><h1>PROXIMAMENTE!</h1></center>
+                        <img src="<?= baseUrl ?>assets/img/mtpgwb/mantenimiento.jpg" alt="mantenimiento" style="width: 100%;">
                     </div>
                 <?php else : ?>
                     <?php foreach ($productos as $products) : ?>
