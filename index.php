@@ -11,7 +11,7 @@ require_once 'views/layout/head.php';
 <body id="page-top">
     <?php
     require_once 'views/layout/navbar.php';
-    
+
     if (isset($_GET['controller'])) {
         $nameController = $_GET['controller'] . 'Controller';
     } else {
@@ -34,6 +34,10 @@ require_once 'views/layout/head.php';
     /* ELIMINACION DE LA SESSSION */
     Utils::deleteSession('errorLogin');
     ?>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts2.js"></script>
     <!-- ./wrapper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>

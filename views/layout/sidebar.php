@@ -2,7 +2,7 @@
 <?php
 $allCategorias  =  Utils::sidebarCategorias();
 ?>
-<div id="navbarshop" class="border-bottom bg-white" id="sidebar-wrapper" style="display: block; width: 300px !important;">
+<div class="border-bottom bg-white" id="sidebar-wrapper" style="display: block; width: 300px !important;">
     <!-- <div class="list-group list-group-flush"></div> -->
     <div class="list-group list-group-flush">
         <?php while ($categoria = $allCategorias->fetch_object()) : ?>
