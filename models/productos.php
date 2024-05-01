@@ -337,6 +337,10 @@ public function getAllProductosActivosByCategoria($idcategoria){
   $allProductosActivosByCategoria  =  $this->db->query($sql);
   return $allProductosActivosByCategoria;
 }
+
+public function getAllInfoPorductoById(){
+  
+}
 }
 
 ?>

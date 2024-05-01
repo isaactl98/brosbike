@@ -13,8 +13,6 @@ class homeController
     public function shopBrosBike()
     {
         $allProductos =  new Productos();
-       
-
         //VALIDACION DE LA CATEGORIA SOLICITADA
         if (isset($_GET['idcategoriaProducto']) && $_GET['idcategoriaProducto'] != 1) {
             
@@ -40,7 +38,9 @@ class homeController
     {
         if (isset($_GET['prod'])) {
             $idprod =  $_GET['prod'];
-            echo $idprod;
+            
+
+            require_once 'views/shop/detalleproducto.php';
         }
     }
     public function servicios()
