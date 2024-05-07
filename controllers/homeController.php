@@ -38,6 +38,7 @@ class homeController
     {
         if (isset($_GET['prod'])) {
             $idprod =  $_GET['prod'];
+            var_dump($idprod );
             require_once 'views/shop/detalleproducto.php';
         }
     }

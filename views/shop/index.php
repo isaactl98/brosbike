@@ -49,7 +49,7 @@
                     <?php else : ?>
                         <?php foreach ($productos as $products) : ?>
                             <div class="col-md-3 col-sm-12 p-2">
-                                <a href="<?= baseUrl ?>home/detalleProducto?prod=<?= $products['id'] ?>" class="text-decoration-none text-black">
+                                <a href="<?= baseUrl ?>home/detalleProducto&prod=<?= $products['id'] ?>" class="text-decoration-none text-black">
                                     <cennter>
                                         <img src="<?= baseUrl ?>assets/img/productos/AIBPXzzSD6zzzz_1_1.png" width="250" height="auto" alt="">
                                         <h5><?= $products['prod_nombre']; ?></h5><small>$<?= $products['prod_precio']; ?></small>
