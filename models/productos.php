@@ -333,11 +333,14 @@ public function getAllProductosActivos(){
   return $allProductosActivos;
 }
 public function getAllProductosActivosByCategoria($idcategoria){
-  $sql =  "SELECT * FROM productos WHERE categoria_id = {$idcategoria} status =  1;";
+  $sql =  "SELECT * FROM productos WHERE categoria_id = {$idcategoria} AND status =  1;";
   $allProductosActivosByCategoria  =  $this->db->query($sql);
+  return $allProductosActivosByCategoria;
 }
 
-
+public function getAllInfoPorductoById(){
+  
+}
 }
 
 ?>
