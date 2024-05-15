@@ -3,5 +3,7 @@
     <h6><small class="text-muted">HOME</small> | TIENDA | </h6>
 </div>
 <div class="container py-5">
-    <h1>PROXIMAMENTE MAS DETALLES</h1>
+    <h1>PROXIMAMENTE MAS DETALLES DE NUESTROS PRODUCTOS</h1>
+    <h1>PROXIMAMENTE MAS DETALLES DE NUESTROS PRODUCTOS</h1>
+    <h1>PROXIMAMENTE MAS DETALLES DE NUESTROS PRODUCTOS</h1>
 </div>

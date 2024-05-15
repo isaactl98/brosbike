@@ -1,0 +1,2 @@
+//PARA VER LAS RAMAS DEL PROYECTO CONFIGURAMOS EL COMANDO GIT TREE
+git config --global alias.tree "log --pretty=format:'%h %s' --graph"
