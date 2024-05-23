@@ -339,7 +339,10 @@ public function getAllProductosActivosByCategoria($idcategoria){
 }
 
 public function getAllInfoPorductoById(){
-  
+  $sql = "SELECT * FROM productos WHERE id =  {$this->getId()};";
+  $infoProducto =  $this->db->query($sql);
+
+  return $infoProducto->fetch_object();
 }
 }
 

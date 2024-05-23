@@ -48,7 +48,7 @@
                         </div>
                     <?php else : ?>
                         <?php foreach ($productos as $products) : ?>
-                            <div class="col-md-3 col-sm-12 p-2">
+                            <div class="col-3 col-md-3 col-sm-12 p-4 m-3">
                                 <a href="<?= baseUrl ?>home/detalleProducto&prod=<?= $products['id'] ?>" class="text-decoration-none text-black">
                                     <cennter>
                                         <img src="<?= baseUrl ?>assets/img/productos/AIBPXzzSD6zzzz_1_1.png" width="250" height="auto" alt="">

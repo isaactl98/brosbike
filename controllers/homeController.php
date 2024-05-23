@@ -38,7 +38,10 @@ class homeController
     {
         if (isset($_GET['prod'])) {
             $idprod =  $_GET['prod'];
-            var_dump($idprod );
+            $infoProductoById =  new Productos();
+            $infoProductoById->setId($idprod);
+            $infoProducto = $infoProductoById->getAllInfoPorductoById();
+
             require_once 'views/shop/detalleproducto.php';
         }
     }
