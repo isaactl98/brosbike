@@ -11804,7 +11804,7 @@ hr.divider-light {
 
 #mainNav {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  background-color: #fff;
+  background-color: #000;
   transition: background-color 0.2s ease;
 }
 #mainNav .navbar-brand {
@@ -11812,10 +11812,10 @@ hr.divider-light {
     Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
-  color: #212529;
+  color: #fff;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
-  color: #6c757d;
+  color: #fff;
   font-family: 'Syne', sans-serif,"Century Gothic", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -11825,10 +11825,10 @@ hr.divider-light {
 }
 #mainNav .navbar-nav .nav-item .nav-link:hover,
 #mainNav .navbar-nav .nav-item .nav-link:active {
-  color: #f4623a;
+  color: #ff0000 !important;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active {
-  color: #f4623a !important;
+  color: #ff0000 !important;
 }
 @media (min-width: 992px) {
   #mainNav {
@@ -11839,14 +11839,14 @@ hr.divider-light {
     color: rgba(255, 255, 255, 0.7);
   }
   #mainNav .navbar-brand:hover {
-    color: #fff;
+    color: #ff0000 !important;
   }
   #mainNav .navbar-nav .nav-item .nav-link {
     color: rgba(255, 255, 255, 0.7);
     padding: 0 1rem;
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: #fff;
+    color: #ff0000 !important;
   }
   #mainNav .navbar-nav .nav-item:last-child .nav-link {
     padding-right: 0;
@@ -11856,16 +11856,16 @@ hr.divider-light {
     background-color: #fff;
   }
   #mainNav.navbar-shrink .navbar-brand {
-    color: #212529;
+    color: #000;
   }
   #mainNav.navbar-shrink .navbar-brand:hover {
-    color: #f4623a;
+    color: #ff0000 !important;
   }
   #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link {
-    color: #212529;
+    color: #000;
   }
   #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover {
-    color: #f4623a;
+    color: #ff0000 !important;
   }
 }
 
@@ -11878,11 +11878,13 @@ header.masthead {
       rgba(128, 128, 128, 0) 100%
     ),
     url("../assets/img/brosbike/maxresdefault.jpg");
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+  margin-top: 55px !important;
 }
+
 header.masthead h1,
 header.masthead .h1 {
   font-size: 2.25rem;

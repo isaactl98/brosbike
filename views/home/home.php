@@ -45,9 +45,9 @@
 </section>
 <!-- Portfolio-->
 <div id="portfolio">
-    <div class="container-fluid p-0">
+    <div class="container-fluid">
         <div class="row g-0">
-            <div class="col-lg-4 col-sm-6">
+            <div class="col-lg-4 col-md-6 col-12">
                 <a class="portfolio-box" href="assets/img/portfolio/fullsize/imgP3v1.png" title="GripFox">
                     <img class="img-fluid" src="assets/img/portfolio/thumbnails/imgP3v1.png" alt="GripFox" height="350px" />
                     <div class="portfolio-box-caption">
@@ -56,7 +56,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-lg-4 col-sm-6">
+            <div class="col-lg-4 col-md-6 col-12">
                 <a class="portfolio-box" href="assets/img/portfolio/fullsize/imgP2.jpg" title="BE DIRT">
                     <img class="img-fluid" src="assets/img/portfolio/thumbnails/imgP2.jpg" alt="..." />
                     <div class="portfolio-box-caption">
@@ -65,7 +65,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-lg-4 col-sm-6">
+            <div class="col-lg-4 col-md-6 col-12">
                 <a class="portfolio-box" href="assets/img/portfolio/fullsize/portaforlioHome.png" title="POLIGON">
                     <img class="img-fluid" src="assets/img/portfolio/thumbnails/portaforlioHome.png" alt="..." />
                     <div class="portfolio-box-caption">

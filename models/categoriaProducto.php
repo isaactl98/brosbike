@@ -79,6 +79,12 @@ class categoriaProducto{
     return $allCategorrias;
   }
 
+  public function getpathCategoriaProductos($idcategoria){
+    $sql = "SELECT path_imgprod AS path_imgprod FROM categorias WHERE id = {$idcategoria}";
+    $path_imgprod =  $this->db->query($sql)->fetch_object()->path_imgprod;
+    return $path_imgprod;
+  }
+
   public function getBannerCategoria($idcategoria){
     $sql = "SELECT img_banner AS banner FROM categorias WHERE id = {$idcategoria}";
     $banner =  $this->db->query($sql)->fetch_object()->banner;

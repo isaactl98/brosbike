@@ -20,6 +20,8 @@ class homeController
             $productos =  $allProductos->getAllProductosActivosByCategoria($idcategoriaProducto);
             $totalproductos =  $productos->num_rows;
             $banner =  new categoriaProducto();
+            $allCategorias = $banner->getAllCategorias();
+            $path_imgprod = $banner->getpathCategoriaProductos($idcategoriaProducto);
             $img_banner =  $banner->getBannerCategoria($idcategoriaProducto);
             
             require_once 'views/shop/index.php';
@@ -29,6 +31,8 @@ class homeController
             $productos =  $allProductos->getAllProductosActivosByCategoria($idcategoriaProducto);
             $totalproductos =  $productos->num_rows;
             $banner =  new categoriaProducto();
+            $allCategorias = $banner->getAllCategorias();
+            $path_imgprod = $banner->getpathCategoriaProductos($idcategoriaProducto);
             $img_banner =  $banner->getBannerCategoria($idcategoriaProducto);
             require_once 'views/shop/index.php';
         }
